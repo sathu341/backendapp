@@ -13,7 +13,7 @@ async function main(){
 }
 const userModel=require('./model/userSchema')
 console.log(port)
-app.get("/",(req,res)=>{
+app.post("/",(req,res)=>{
     const{user}=req.body;
     userModel.create({user})
     console.log(user)
