@@ -7,7 +7,7 @@ app.use(cors(
     credentials:true
     }
 ))
-app.use(express.urlencoded({extended:true}))
+// app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 const mongoose=require('mongoose')
 require('dotenv').config() 
